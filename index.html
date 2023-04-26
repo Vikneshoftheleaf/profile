@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=''>
 
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,10 @@
     <link rel="stylesheet" href="./icons/fontawesome-free-6.2.0-web/css/all.css">
     <script src="./icons/fontawesome-free-6.2.0-web/js/all.js"></script>
     <link rel="icon" type="image/x-icon" href="./src/logologo.svg">
-	<script src="https://cdn.tailwindcss.com"></script>
     <title>Portfolio</title>
-<script src="https://kit.fontawesome.com/067fc88846.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-stone-800 text-slate-100">
+<body class="dark:bg-stone-800 dark:text-slate-100">
     <header>
         <nav class="flex justify-between md:block px-8 py-4 items-center ">
             <div class=" flex justify-between items-center backdrop-blur-sm">
@@ -30,6 +28,8 @@
                     <a class="hover:text-purple-600 duration-100 ease-in-out" href="#projects">Projects</a>
                     <a class="hover:text-purple-600 duration-100 ease-in-out" href="#skills">Skills</a>
                     <button class="rounded-lg px-4 py-2 capitalize bg-purple-500 text-slate-200 font-semibold hover:opacity-50 duration-100 ease-in-out">Contact Me</button>
+                    <i class="modeToggle fa-solid fa-sun bg-purple-300 rounded-full cursor-pointer p-4" onclick="darkmode()"></i>
+
                 </div>
 
             </div>
@@ -171,6 +171,27 @@
 
 
     <script>
+        const isdarkmode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (isdarkmode) {
+            var f = document.querySelector('html');
+            var modeToggle = document.querySelector('.modeToggle');
+            f.classList.toggle('dark', true);
+            modeToggle.classList.toggle('fa-moon');
+        } else {
+            var f = document.querySelector('html');
+            var modeToggle = document.querySelector('.modeToggle');
+            f.classList.toggle('dark', false);
+            modeToggle.classList.toggle('fa-moon');
+        }
+
+        function darkmode() {
+            var f = document.querySelector('html');
+            var modeToggle = document.querySelector('.modeToggle');
+            f.classList.toggle('dark');
+            modeToggle.classList.toggle('fa-moon');
+            modeToggle.classList.toggle('fa-sun');
+        }
+
         function toggle() {
             menuIcon = document.querySelector(".menuIcon");
             mobLink = document.querySelector(".moblinks");
