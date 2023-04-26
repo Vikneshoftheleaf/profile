@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./icons/fontawesome-free-6.2.0-web/css/all.css">
+    <script src="./icons/fontawesome-free-6.2.0-web/js/all.js"></script>
+    <link rel="icon" type="image/x-icon" href="./src/logologo.svg">
+	<script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+<script src="https://kit.fontawesome.com/067fc88846.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-stone-800 text-slate-100">
+    <header>
+        <nav class="flex justify-between md:block px-8 py-4 items-center ">
+            <div class=" flex justify-between items-center backdrop-blur-sm">
+                <div class="logo">
+                    <a href="">
+                        <img class="h-10 md:h-20" src="./src/logologo.svg" alt="logo">
+                    </a>
+                </div>
+
+                <div class="links hidden md:flex items-center gap-4">
+                    <a class="hover:text-purple-600 duration-100 ease-in-out" href="#about">About</a>
+                    <a class="hover:text-purple-600 duration-100 ease-in-out" href="#contact">Contact</a>
+                    <a class="hover:text-purple-600 duration-100 ease-in-out" href="#projects">Projects</a>
+                    <a class="hover:text-purple-600 duration-100 ease-in-out" href="#skills">Skills</a>
+                    <button class="rounded-lg px-4 py-2 capitalize bg-purple-500 text-slate-200 font-semibold hover:opacity-50 duration-100 ease-in-out">Contact Me</button>
+                </div>
+
+            </div>
+            <div class="menu md:hidden z-30">
+                <i class="menuIcon fa-solid fa-bars" onclick="toggle()"></i>
+            </div>
+        </nav>
+
+        <div class="moblinks hidden flex justify-center absolute top-0 right-0 z-10 w-screen backdrop-blur-2xl h-screen flex-col text-xl items-center gap-4">
+            <a class="hover:text-purple-600 duration-100 ease-in-out" href="#about">About</a>
+            <a class="hover:text-purple-600 duration-100 ease-in-out" href="#contact">Contact</a>
+            <a class="hover:text-purple-600 duration-100 ease-in-out" href="#projects">Projects</a>
+            <a class="hover:text-purple-600 duration-100 ease-in-out" href="#skills">Skills</a>
+            <button class="rounded-lg px-4 py-2 capitalize bg-purple-500 text-slate-200 font-semibold hover:opacity-50 duration-100 ease-in-out">Contact Me</button>
+        </div>
+    </header>
+
+    <section class="heroBanner relative my-10">
+        <div class="circle h-40 w-40 bg-purple-500 blur-3xl rounded-full absolute -z-10"></div>
+        <div class="flex flex-col md:flex-row text-center pt-8 md:pb-20 gap-4">
+            <div class=" md:w-1/2 text-center leading-loose">
+                <h1 class="text-6xl font-extrabold md:text-[110px]">Hello I'm <br> Viknesh.</h1>
+                <p class="text-base md:text-[18px] mt-4 ">A Web Developer And Front-End Expert.</p>
+                <div class="buttons mt-4 flex justify-center gap-4">
+                    <button class="px-4 py-2 border-2 border-purple-500 bg-purple-500 text-md">Contact Me</button>
+                    <button class="px-4 py-2 border-2 border-purple-500 text-md">Download CV</button>
+                </div>
+            </div>
+            <div class=" md:w-1/2 leading-loose text-left p-5">
+                <h1 class="text-lg font-bold">About</h1>
+                <p class="text-base text-justify mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit, hic illum tempora, autem labore veritatis unde a tempore veniam cumque harum quos corporis explicabo architecto. Ipsam assumenda excepturi aliquam suscipit tempora enim
+                    placeat eligendi, at cumque. Sequi, quos numquam. Eaque fugit fugiat qui itaque ab natus quia voluptas, laudantium nihil deserunt ad rem? Iusto quibusdam reiciendis quisquam minima, a quos dolor tenetur dolorum in suscipit itaque,
+                    beatae et minus! Modi molestiae non itaque quia iusto distinctio atque incidunt at, id ipsam, amet asperiores nostrum quo. Optio velit nesciunt molestiae eos fuga similique aliquam veniam, itaque sequi! Non, quisquam provident?</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills mt-10 border">
+        <div class="p-1">
+            <div class="text-center leading-relaxed p-2">
+                <h1 class="text-4xl font-semibold">Tech I know</h1>
+                <p class="text-base mt-2">Here are the Techonlogoies and Programming langauge that I been Working with all of my Projects</p>
+            </div>
+            <div class="grid md:grid-cols-4 grid-cols-1 gap-5 p-8">
+                <div class="frontend text-center rounded-lg p-1 bg-gradient-to-tr from-pink-500 via-indigo-400 to-purple-500">
+                    <div class="bg-stone-800 h-full w-full py-4 rounded-lg">
+                        <h2 class="font-semibold text-xl">Front-End</h2>
+
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/html.png" alt="">
+                            <div class="text-md font-semibold">HTML5</div>
+                        </div>
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/CSS3.png" alt="">
+                            <div class="text-md font-semibold">Bootstrap</div>
+                        </div>
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/TailwindCSS.png" alt="">
+                            <div class="text-md font-semibold">TailWindCss</div>
+                        </div>
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/Bootstrap.png" alt="">
+                            <div class="text-md font-semibold">Bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="backend text-center rounded-lg p-1 bg-gradient-to-tr from-pink-500 via-indigo-400 to-purple-500">
+                    <div class="bg-stone-800 h-full w-full py-4 rounded-lg">
+                        <h2 class="font-semibold text-xl">Back-End</h2>
+
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/node/nodejs.svg" alt="">
+                            <div class="text-md font-semibold">NodeJs</div>
+                        </div>
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/php.svg" alt="">
+                            <div class="text-md font-semibold">Php</div>
+                        </div>
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/c.svg" alt="">
+                            <div class="text-md font-semibold">Django</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="framworks text-center rounded-lg p-1 bg-gradient-to-tr from-pink-500 via-indigo-400 to-purple-500">
+                    <div class="bg-stone-800 h-full w-full py-4 rounded-lg">
+                        <h2 class="font-semibold text-xl">FrameWorks</h2>
+
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/react/React.png" alt="">
+                            <div class="text-md font-semibold">React JS</div>
+                        </div>
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/CSS3.png" alt="">
+                            <div class="text-md font-semibold">Next JS</div>
+                        </div>
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/ionic/ionic (2).png" alt="">
+                            <div class="text-md font-semibold">Ionic</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="pl text-center rounded-lg p-1 bg-gradient-to-tr from-pink-500 via-indigo-400 to-purple-500">
+                    <div class="bg-stone-800 h-full w-full py-4 rounded-lg">
+                        <h2 class="font-semibold text-xl">Programming Languages</h2>
+
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/c.svg" alt="">
+                            <div class="text-md font-semibold">C</div>
+                        </div>
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/cpp.svg" alt="">
+                            <div class="text-md font-semibold">C++</div>
+                        </div>
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/java.png" alt="">
+                            <div class="text-md font-semibold">Java</div>
+                        </div>
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/linux.png" alt="">
+                            <div class="text-md font-semibold">Shell Script</div>
+                        </div>
+                        <div class="imgs p-4 grayscale flex items-center gap-5">
+                            <img class="h-16" src="./src/wew.png" alt="">
+                            <div class="text-md font-semibold">Python</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function toggle() {
+            menuIcon = document.querySelector(".menuIcon");
+            mobLink = document.querySelector(".moblinks");
+            menuIcon.classList.add("fa-bars")
+            menuIcon.classList.toggle("fa-xmark")
+            mobLink.classList.toggle("hidden")
+        }
+    </script>
+</body>
+
+</html>
