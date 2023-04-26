@@ -181,7 +181,7 @@ var modeToggle = document.querySelector('.modeToggle');
             f.classList.toggle('dark', true);
             modeToggle.classList.toggle('fa-moon');
 modeToggle.classList.toggle('fa-sun');
-modeToggle.addEventListener("click", darkmode());
+modeToggle.addEventListener("click", darkmode);
         } else {
             var f = document.querySelector('html');
             var modeToggle = document.querySelector('.modeToggle');
@@ -189,7 +189,7 @@ modeToggle.addEventListener("click", darkmode());
             modeToggle.classList.toggle('fa-moon');
 modeToggle.classList.toggle('fa-sun')
         }
-modeToggle.addEventListener("click", darkmode());
+modeToggle.addEventListener("click", darkmode);
 
         function darkmode() {
             var f = document.querySelector('html');
