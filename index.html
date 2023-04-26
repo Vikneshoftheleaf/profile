@@ -180,6 +180,7 @@
             f.classList.toggle('dark', true);
             modeToggle.classList.toggle('fa-moon');
 modeToggle.classList.toggle('fa-sun');
+modeToggle.addEventListener("click", darkmode());
         } else {
             var f = document.querySelector('html');
             var modeToggle = document.querySelector('.modeToggle');
