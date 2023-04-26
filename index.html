@@ -30,7 +30,7 @@
                     <a class="hover:text-purple-600 duration-100 ease-in-out" href="#projects">Projects</a>
                     <a class="hover:text-purple-600 duration-100 ease-in-out" href="#skills">Skills</a>
                     <button class="rounded-lg px-4 py-2 capitalize bg-purple-500 text-slate-200 font-semibold hover:opacity-50 duration-100 ease-in-out">Contact Me</button>
-                    <i class="modeToggle fa-solid fa-sun bg-purple-300 rounded-full cursor-pointer p-4" onclick="darkmode()"></i>
+                    <i class="modeToggle fa-solid fa-sun bg-purple-300 rounded-full cursor-pointer p-4"></i>
 
                 </div>
 
@@ -174,6 +174,7 @@
 
     <script>
         let isdarkmode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+var modeToggle = document.querySelector('.modeToggle');
         if (isdarkmode) {
             var f = document.querySelector('html');
             var modeToggle = document.querySelector('.modeToggle');
@@ -188,6 +189,7 @@ modeToggle.addEventListener("click", darkmode());
             modeToggle.classList.toggle('fa-moon');
 modeToggle.classList.toggle('fa-sun')
         }
+modeToggle.addEventListener("click", darkmode());
 
         function darkmode() {
             var f = document.querySelector('html');
