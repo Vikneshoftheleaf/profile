@@ -173,7 +173,7 @@
 
 
     <script>
-        const isdarkmode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        let isdarkmode = window.matchMedia('(prefers-color-scheme: dark)').matches;
         if (isdarkmode) {
             var f = document.querySelector('html');
             var modeToggle = document.querySelector('.modeToggle');
@@ -185,9 +185,11 @@ modeToggle.classList.toggle('fa-sun');
             var modeToggle = document.querySelector('.modeToggle');
             f.classList.toggle('dark', false);
             modeToggle.classList.toggle('fa-moon');
+modeToggle.classList.toggle('fa-sun')
         }
 
         function darkmode() {
+isdarkmode=false;
             var f = document.querySelector('html');
             var modeToggle = document.querySelector('.modeToggle');
             f.classList.toggle('dark');
