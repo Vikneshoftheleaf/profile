@@ -174,22 +174,18 @@
 
     <script>
         const isdarkmode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        let dom = document.querySelector('html');
+        let modeToggle = document.querySelector('.modeToggle');
         if (isdarkmode) {
-            var f = document.querySelector('html');
-            var modeToggle = document.querySelector('.modeToggle');
-            f.classList.toggle('dark', true);
+            dom.classList.toggle('dark', true);
             modeToggle.classList.toggle('fa-moon');
         } else {
-            var f = document.querySelector('html');
-            var modeToggle = document.querySelector('.modeToggle');
-            f.classList.toggle('dark', false);
+            dom.classList.toggle('dark', false);
             modeToggle.classList.toggle('fa-moon');
         }
 
         function darkmode() {
-            var f = document.querySelector('html');
-            var modeToggle = document.querySelector('.modeToggle');
-            f.classList.toggle('dark');
+            dom.classList.toggle('dark');
             modeToggle.classList.toggle('fa-moon');
             modeToggle.classList.toggle('fa-sun');
         }
