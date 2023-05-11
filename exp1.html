@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../icons/fontawesome-free-6.2.0-web/css/all.css">
+    <script src="https://kit.fontawesome.com/067fc88846.js" crossorigin="anonymous"></script>
+    <script src="./icons/fontawesome-free-6.2.0-web/js/all.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./src/logologo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Logo Desinger | Portfolio</title>
+</head>
+
+<body class="bg-slate-100 m-0 p-0 ">
+    <header>
+        <nav class="mx-4 md:mx-10  py-2 flex justify-between items-center">
+            <img src="./src/logologo.png" alt="" class="h-10 md:h-20">
+            <div class="socio-icons flex items-center gap-3 text-purple-500">
+                <i class="fa-brands fa-instagram  fa-2xl "></i>
+                <i class="fa-brands fa-linkedin fa-2xl fa-thin"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero mx-10 ">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            <div class="txt">
+                <div class="text-[38px] mt-5 lg:text-[60px] font-bold leading-tight">
+                    I help brands shape fun and engaging brand identities.
+                </div>
+                <div class="text-sm lg:text-md mt-5">
+                    Hi, I’m Wojtek Polak! I am a illustrative designer with over 10 years of experience. Branding and Character Design are certainly some of my favorite things! I’m always looking for exciting new projects.
+                </div>
+                <div class="my-10">
+                    <a href="" class="bg-purple-500 text-slate-100 lg:text-xl px-8 py-4 my-10 font-bold shadow-lg">LET'S GET IN TOUCH</a>
+
+                </div>
+            </div>
+
+            <div class="person-img flex justify-end">
+                <img src="./src/pexels-italo-melo-2379004-removebg-preview.png" alt="" class="md:h-[500px] h-[400px] lg:h-[600px]" style="transform: scaleX(-1);">
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="companies bg-white py-10">
+        <div>
+            <div class="text-center text-xl font-bold">Trusted by leading brands</div>
+            <div class="flex justify-between px-4 my-5">
+                <img src="./src/800 (1).jpg" alt="" class="h-20">
+                <img src="./src/800 (12).jpg" alt="" class="h-20">
+                <img src="./src/800 (4).jpg" alt="" class="h-20">
+                <img src="./src/800 (4).jpg" alt="" class="h-20">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="works">
+        <div class="grid grid-cols-3">
+            <img src="./src/800 (1).jpg" alt="">
+            <img src="./src/800 (12).jpg" alt="">
+            <img src="./src/800 (4).jpg" alt="">
+
+        </div>
+        <div class="grid grid-cols-3">
+            <img src="./src/800 (6).jpg" alt="">
+            <img src="./src/800.jpg" alt="">
+            <img src="./src/800 (5).jpg" alt="">
+        </div>
+    </section>
+
+    <section class="footer bg-white py-8">
+
+        <div class="flex justify-center items-center gap-5">
+            <img src="./src/logologo.png" alt="" srcset="" class="h-20">
+            <div class="foo-txt flex flex-col ">
+                <div class="text-xl ">
+                    Let's Connect
+                </div>
+                <span class="text-base">
+                    example@gmail.com
+                </span>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">&copy;<span id="current-year"></span> example.com</div>
+        <script>
+            var thisyear = new Date().getFullYear();
+            document.getElementById('current-year').textContent = thisyear;
+        </script>
+
+    </section>
+
+</body>
+
+</html>
